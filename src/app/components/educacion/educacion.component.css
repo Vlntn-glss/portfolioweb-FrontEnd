@@ -1,0 +1,13 @@
+.container{
+    background-color: #483D8B;
+    color: aliceblue;
+    box-shadow: 4px 4px 4px grey;
+}
+div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+h3, h4{
+ display: inline;
+}

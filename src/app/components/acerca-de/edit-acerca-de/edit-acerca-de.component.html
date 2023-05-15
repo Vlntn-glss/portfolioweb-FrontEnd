@@ -1,0 +1,57 @@
+<div class="container-fluid" *ngIf="persona">
+    <div class="row">
+        <div class="col-12">
+            <div class="argprograma">
+                <img src="../../../assets/APLogo.png" id="logoap" class="img-fluid">
+                <a href=""><img src="../../../assets/home.png" id="social" class="img-fluid"></a>
+            </div>
+            <div class="social">
+                <a href=""><img src="../../../assets/github.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/linkedin.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/facebook.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/instagram.png" id="social" class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+    <section class="vh-100 gradient-custom">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-ligt text-dark">
+                        <div class="card-body text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase">Editar Persona</h2>
+
+                                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            [(ngModel)]="persona.nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="apellido">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido"
+                                            [(ngModel)]="persona.apellido" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="descripcion">Descripcion</label>
+                                        <input type="text" class="form-control" id="descripcion" name="descripcion"
+                                            [(ngModel)]="persona.descripcion" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="img">Imagen</label>
+                                        <input type="file" class="form-control" id="img" name="img"
+                                            [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                                    </div>
+                                    <button class="btn btn-lingt">Actualizar</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

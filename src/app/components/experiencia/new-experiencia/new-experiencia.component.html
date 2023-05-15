@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="argprograma">
+                <img src="../../../assets/APLogo.png" id="logoap" class="img-fluid">
+                <a href=""><img src="../../../assets/home.png" id="social" class="img-fluid"></a>
+            </div>
+            <div class="social">
+                <a href=""><img src="../../../assets/github.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/linkedin.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/facebook.png" id="social" class="img-fluid"></a>
+                <a href=""><img src="../../../assets/instagram.png" id="social" class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+    <section class="vh-100 gradient-custom">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-ligt text-dark">
+                        <div class="card-body text-center">
+
+                            <div class="mb-md-5 mt-md-4 pb-5">
+
+                                <h2 class="fw-bold mb-2 text-uppercase">Nueva Experiencia</h2>
+
+                                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                                    <div class="form-group">
+                                        <label for="nombreE">Empresa</label>
+                                        <input type="text" class="form-control" id="nombreE" name="nombreE"
+                                            [(ngModel)]="nombreE" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="descripcionE">Descripcion</label>
+                                        <input type="text" class="form-control" id="descripcionE" name="descripcionE"
+                                            [(ngModel)]="descripcionE" required>
+                                    </div>
+                                    <button class="btn btn-lingt">Agregar</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

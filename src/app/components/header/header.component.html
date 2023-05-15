@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="argprograma">
+             <img src="../../../assets/APLogo.png" id="logoap" class="img-fluid">
+            </div>
+            <div class="social">
+             <a href=""><img src="../../../assets/github.png" id="social" class="img-fluid"></a>
+             <a href=""><img src="../../../assets/linkedin.png" id="social" class="img-fluid"></a>
+             <a href=""><img src="../../../assets/facebook.png" id="social" class="img-fluid"></a>
+             <a href=""><img src="../../../assets/instagram.png" id="social" class="img-fluid"></a>
+             <button type="button" class="btn btn-outline-light" (click)="login()"*ngIf="!isLogged">Ingresar</button>
+             <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">Cerrar Sesion</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class= "col-xs-12" class="col-sm-4">
+        </div>
+        <div class= "col-xs-12" class="col-sm-8" id="nombre">
+          <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+          <h2>Full Stack Developer Jr.</h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+section {
+    background: #483D8B;
+}
+.card{
+    box-shadow: 3px 3px 3px grey;
+}
+.container-fluid{
+    background-color: #483D8B;
+    color: aliceblue;
+}
+.argprograma{
+    float: left;
+}
+.social{
+   float: right;
+   margin-top: 25px;
+}
+#logoap{
+    width: 150px;
+}
+#social{
+    width: 27px;
+    margin-right: 10px
+}
+@media(min-width:475px){
+    #social{
+        width: 40px;
+    }
+    }
+

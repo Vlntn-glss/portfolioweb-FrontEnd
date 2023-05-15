@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-9">
+        <h2>Hard & Soft Skills</h2>
+        <div class="col-2">
+          <button class="btn btn-lingt" type="button" routerLink="/nuevaskill" *ngIf="isLogged">Agregar Skill</button>
+      </div>
+    </div>
+</div>
+<div class="row">
+    <div class="text-center col-xs-10 col-sm-3" *ngForm="let skill of skill">
+        <circle-progress
+        [percent]="(skill.porcentaje)"
+        [title]="(skill.nombre)"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [titleFontSize]="'2em'"
+        [radius]="90"
+        [outerStrokeWidth]="14"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#483D8B'"
+        [innerStrokeColor]="'#B0C4DE'"
+        [animation]="true"
+        [animationDuration]="500"
+      ></circle-progress> 
+      <div class="col-xs-2 col-sm-1">
+        <td *ngIf="isLogged"><button class="btn btn-lingt" routerLink="/edithys/{{skill.id}}"><i
+        class="bi bi-pencil"></i></button></td>
+        <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(skill.id)"><i
+        class="bi bi-trash"></i></button></td>  
+      </div>  
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+.acercademi{
+    text-align: center;
+    padding-top: 15px;
+}
+
+img{
+    width: 230px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px grey;
+    margin-top: 10px;
+}
+@media(min-width:576px){
+    img{
+        margin-top: -85px;
+    }
+}

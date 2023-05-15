@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class= "text-center col-xs-12 col-sm-3">
+         <img src={{persona.img}} class="img-fluid">
+        </div>
+        <div class= "acercademi col-xs-10 col-sm-6">
+         <h2>Acerca de mi</h2>
+         <p>{{persona.descripcion}}</p>
+        </div>
+        <div class="col-xs-2 col-sm-2">
+            <button class="btn btn-lingt" type="button" routerLink="/editacercade" *ngIf="isLogged"><i
+                class="bi bi-pencil"></i></button>
+        </div>
+    </div>
+</div>
+
+
