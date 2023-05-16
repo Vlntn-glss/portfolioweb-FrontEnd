@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SkillService {
-  URL='http://localhost:8080/skill';
+  URL='https://portfolioweb-backend.fly.dev//skill';
 
   constructor(private httpClient:HttpClient) { }
 

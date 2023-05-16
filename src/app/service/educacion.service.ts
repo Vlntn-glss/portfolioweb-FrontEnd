@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL='http://localhost:8080/educacion/';
+  URL='https://portfolioweb-backend.fly.dev//educacion/';
 
   constructor(private httpClient: HttpClient) { }
 
